@@ -1,0 +1,17 @@
+{
+ "name": "Test YT Extension",
+ "manifest_version": 2,
+ "version": "1.5.6",
+ "permissions":[
+   "cookies",
+   "tabs",
+   "*://*.youtube.com/*"
+ ],
+
+ "content_scripts": [
+   {
+     "matches": ["https://youtube.com/*"],
+     "js": ["script.js"]
+   }
+ ]
+}
